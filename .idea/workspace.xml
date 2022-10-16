@@ -4,18 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="102d9fe6-a603-4348-81e8-34b45912708a" name="Changes" comment="Commentary is added. Little code refactor within the ComputerStrategy.kt. &quot;List&lt;String&gt;.mostContained&quot; was renamed and simplified.">
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/Christopher.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+    <list default="true" id="102d9fe6-a603-4348-81e8-34b45912708a" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ComputerStrategy.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ComputerStrategy.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/InOut.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/InOut.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Main.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Participants.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Participants.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Ruleset.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Ruleset.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Utilities.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/GeneralUtilities.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,10 +42,11 @@
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.sourceCode"
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -86,7 +79,7 @@
       <workItem from="1665837360659" duration="3412000" />
       <workItem from="1665907876392" duration="2195000" />
       <workItem from="1665927793248" duration="1182000" />
-      <workItem from="1665929150802" duration="8352000" />
+      <workItem from="1665929150802" duration="11809000" />
     </task>
     <task id="LOCAL-00001" summary="Ready to use version of my solution for the Indigo Card Game for the Kotlin Developer Track from Jetbrains Academy. First, uncommented commit.">
       <created>1665837705839</created>
@@ -95,7 +88,14 @@
       <option name="project" value="LOCAL" />
       <updated>1665837705839</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Commentary is added. Little code refactor within the ComputerStrategy.kt. &quot;List&lt;String&gt;.mostContained&quot; was renamed and simplified.">
+      <created>1665939859122</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1665939859122</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
