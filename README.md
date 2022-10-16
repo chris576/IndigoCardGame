@@ -6,8 +6,6 @@ mastering kotlin.</p>
 
 ## Gameplay
 
-The game rules are easy:
-
 ### Step 1
 
 Four cards are placed on the table.
