@@ -48,7 +48,7 @@ fun player(): Boolean {
     print("\n")
     Out.printTableDeck(tableDeck)
     Out.printPlayerDeck(player.deck)
-    val selection = In.getCardSelection(player.deck)
+    val selection = In.requestInteger(player.deck)
     if (!selection.first) {
         return false
     }
@@ -59,7 +59,7 @@ fun player(): Boolean {
             player.points += Ruleset.calcPoints(tableDeck)
             player.cards += tableDeck.size
             tableDeck.clear()
-            Out.printIfWon("Player", player.points, player.cards, computer.points, computer.cards)
+            Out.printWinMessage("Player", player.points, player.cards, computer.points, computer.cards)
         }
         false -> {
             tableDeck.add(player.deck.pull(selection.second - 1))
@@ -84,7 +84,7 @@ fun bot() {
             computer.points += Ruleset.calcPoints(tableDeck)
             computer.cards += tableDeck.size
             tableDeck.clear()
-            Out.printIfWon("Computer", player.points, player.cards, computer.points, computer.cards)
+            Out.printWinMessage("Computer", player.points, player.cards, computer.points, computer.cards)
         }
         false -> {
             tableDeck.add(pulled)
@@ -102,7 +102,7 @@ fun play(initial: Boolean) {
     do {
         if (playersTurn) {
             if (!player()) {
-                break;
+                break
             }
         } else {
             bot()

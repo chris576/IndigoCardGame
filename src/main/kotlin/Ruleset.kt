@@ -1,11 +1,11 @@
 package indigo
 
 /**
- * Rulesets for the game.
+ * A utility class to define the rules of the card game.
  */
 object Ruleset {
     /**
-     * Check if win conditions are true for a card.
+     * Checks whether the card's rank or suit is equal to the deck's top card's rank or suit.
      */
     fun isWon(card: String, deck: List<String>): Boolean {
         val value = if (card.length == 3) {
@@ -18,13 +18,12 @@ object Ruleset {
         } else {
             card[1].toString()
         }
-        return !deck.isEmpty() && (deck.last().contains(value) || deck.last().contains(color))
+        return deck.isNotEmpty() && (deck.last().contains(value) || deck.last().contains(color))
     }
 
-
-
     /**
-     * Calculates the points of a won deck.
+     * Calculates the points of a deck.
+     * A, 10, J, Q, K get each a single point.
      */
     fun calcPoints(deck: List<String>): Int {
         return deck.filter {
@@ -33,7 +32,7 @@ object Ruleset {
     }
 
     /**
-     *
+     * The participant with the most cards, get 3 points extra.
      */
     fun pointsToMostCards(p: Participant, c: Participant) {
         if (p.cards > c.cards) {

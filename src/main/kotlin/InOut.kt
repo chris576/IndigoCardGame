@@ -1,8 +1,12 @@
 package indigo
 
+/**
+ * Specifies methods for sending feedback to the user via the console.
+ */
 object Out {
     /**
-     *
+     * Prints the initial table deck, a follows:
+     * "Initial cards on the table: <List of cards>
      */
     fun printInitialTableDeck(tableDeck: List<String>) {
         var out = "Initial cards on the table:"
@@ -13,7 +17,7 @@ object Out {
     }
 
     /**
-     *
+     * Prints the cards on the table.
      */
     fun printTableDeck(tableDeck: List<String>) {
         if (tableDeck.isEmpty()) {
@@ -24,18 +28,23 @@ object Out {
     }
 
     /**
+     * Prints the deck of a player.
      *
+     * @param cardList The list of cards of the player, or the computer.
      */
-    fun printPlayerDeck(entity: List<String>) {
+    fun printPlayerDeck(cardList: List<String>) {
         var out = "Cards in hand:"
-        for (el in entity) {
-            out += " ${entity.indexOf(el) + 1})$el"
+        for (el in cardList) {
+            out += " ${cardList.indexOf(el) + 1})$el"
         }
         println(out)
     }
 
     /**
+     * Prints the card played by the computer.
      *
+     * @param deck The deck of the computer.
+     * @param card The card played by the computer.
      */
     fun printComputerPlays(card: String, deck : List<String>) {
         var out = ""
@@ -48,9 +57,16 @@ object Out {
     }
 
     /**
+     * Prints the win message.
+     *
+     * @param who Who has won?
+     * @param playerScore The score of the player.
+     * @param playerCards The amount of cards of the player.
+     * @param computerScore The score of the computer.
+     * @param computerCards The cards of the computer.
      *
      */
-    fun printIfWon(
+    fun printWinMessage(
         who: String, playerScore: Int, playerCards: Int, computerScore: Int,
         computerCards: Int,
     ) {
@@ -61,7 +77,14 @@ object Out {
     }
 
     /**
+     * Prints the message at the end of a game.
+     * Prints the tables deck, as well as the scores, plus "Game Over".
      *
+     * @param tableDeck The cards on the table.
+     * @param playerScore The score of the player.
+     * @param playerCards The amount of cards of the player.
+     * @param computerScore The score of the computer.
+     * @param computerCards The cards of the computer.
      */
     fun printFinalMessage(
         tableDeck: List<String>, playerScore: Int, playerCards: Int, computerScore: Int,
@@ -78,20 +101,34 @@ object Out {
     }
 }
 
+/**
+ * Defines rules to send requests to the users console.
+ */
 object In {
 
+    /**
+     * Returns whether this string is a boolean.
+     */
     private fun String.isBoolean() : Boolean {
         return this == "yes" || this == "no"
     }
 
     /**
-     *
+     * Returns this string as boolean. Before invoke, it must be checked, whether it is a boolean, or not.
      */
     private fun String.toBoolean() : Boolean {
-        return this == "yes";
+        return this == "yes"
     }
 
-    fun getCardSelection(deck: List<String>) : Pair<Boolean, Int> {
+    /**
+     * Requests an integer from the user.
+     *
+     * As long there is no valid input from the user, the request is returned.
+     *
+     * @return If the user inputs "exit", an empty pair, with a false flag is returned. In any other case a pair is with the int value and a true
+     * flag ist returned.
+     */
+    fun requestInteger(deck: List<String>) : Pair<Boolean, Int> {
         var rtn : Pair<Boolean, Int>?
         do {
             println("Choose a card to play (1-${deck.size}):")
@@ -104,7 +141,10 @@ object In {
     }
 
     /**
-     * Gets the next number from console.
+     * Request a number, or "exit" input from the console.
+     *
+     * @return If "exit" is given to the console, pair with 0 and false is returned. In any other case, a pair with the number value and true is
+     * returned.
      */
     private fun nextNumber(): Pair<Boolean, Int>? {
         try {
@@ -124,7 +164,8 @@ object In {
     }
 
     /**
-     * Gets the next boolean from console.
+     * Requests an boolean input from the user. Valid inputs could be "yes" or "no".
+     * As long there is no valid input, the request is returned.
      */
     fun nextBoolean(): Boolean {
         var rtn: String

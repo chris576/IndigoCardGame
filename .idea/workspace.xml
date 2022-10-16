@@ -4,25 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="102d9fe6-a603-4348-81e8-34b45912708a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/settings.gradle.kts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/ComputerStrategy.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/InOut.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/Main.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/Participants.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/Ruleset.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/Utilities.kt" afterDir="false" />
+    <list default="true" id="102d9fe6-a603-4348-81e8-34b45912708a" name="Changes" comment="Commentary is added. Little code refactor within the ComputerStrategy.kt. &quot;List&lt;String&gt;.mostContained&quot; was renamed and simplified.">
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/Christopher.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ComputerStrategy.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ComputerStrategy.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/InOut.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/InOut.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Main.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Participants.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Participants.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Ruleset.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Ruleset.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Utilities.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/GeneralUtilities.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,14 +43,37 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/Christopher/OneDrive - stud.hs-emden-leer.de/Studium-Unterlagen/Projekte/IndigoCardGame/IndigoCardGame/src/main/kotlin"
+    "last_opened_file_path": "C:/Users/Christopher/OneDrive - stud.hs-emden-leer.de/Studium-Unterlagen/Projekte/IndigoCardGame/IndigoCardGame/src/main/kotlin",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "preferences.sourceCode"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Christopher\OneDrive - stud.hs-emden-leer.de\Studium-Unterlagen\Projekte\IndigoCardGame\IndigoCardGame\src\main\kotlin" />
     </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="MainKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="indigo.MainKt" />
+      <module name="IndigoCardGame.main" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Kotlin.MainKt" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -67,8 +83,38 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1665837358360</updated>
-      <workItem from="1665837360659" duration="321000" />
+      <workItem from="1665837360659" duration="3412000" />
+      <workItem from="1665907876392" duration="2195000" />
+      <workItem from="1665927793248" duration="1182000" />
+      <workItem from="1665929150802" duration="8352000" />
     </task>
+    <task id="LOCAL-00001" summary="Ready to use version of my solution for the Indigo Card Game for the Kotlin Developer Track from Jetbrains Academy. First, uncommented commit.">
+      <created>1665837705839</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1665837705839</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Ready to use version of my solution for the Indigo Card Game for the Kotlin Developer Track from Jetbrains Academy. First, uncommented commit." />
+    <MESSAGE value="Commentary is added. Little code refactor within the ComputerStrategy.kt. &quot;List&lt;String&gt;.mostContained&quot; was renamed and simplified." />
+    <option name="LAST_COMMIT_MESSAGE" value="Commentary is added. Little code refactor within the ComputerStrategy.kt. &quot;List&lt;String&gt;.mostContained&quot; was renamed and simplified." />
   </component>
 </project>

@@ -1,7 +1,7 @@
 package indigo
 
 /**
- * Additional method to pull an element from an mutbale list.
+ * Adds a pull function to a mutable list. Element on index i is returned and removed from list.
  */
 fun MutableList<String>.pull(i: Int): String {
     val rtn = get(i)
@@ -10,7 +10,7 @@ fun MutableList<String>.pull(i: Int): String {
 }
 
 /**
- * Any cards that could be used.
+ * Any cards of the card game, as list of strings.
  */
 fun any() = listOf(
     "A♦", "2♦", "3♦", "4♦", "5♦", "6♦", "7♦", "8♦", "9♦", "10♦", "J♦", "Q♦", "K♦",
